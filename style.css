@@ -17,9 +17,6 @@ body {
     position: relative;
     width: 350px;
     height: 450px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
     backdrop-filter: blur(15px);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 1.0);
 }
@@ -32,17 +29,12 @@ body {
     height: 200px;
     outline: 2px solid #dfe7f2;
 }
-.card-image img {
-    display: block;
-    object-fit: cover;
-}
 
 .social-icons {
     position: absolute;
-    top: 60%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .5s;
     display: flex;
     z-index: 3;
 }
@@ -62,10 +54,12 @@ body {
     font-size: 24px;
     color: #2F3148;
     margin: 0 5px;
-    transition: .5s;
     transform: translateY(200px);
-    opacity: 0;
-    visibility: hidden;
+}
+
+.social-icons li a:hover {
+color: #4b0082;
+box-shadow: 0 0 10px #9400d3;
 }
 
 .details {
@@ -94,28 +88,4 @@ body {
     line-height: 2.5rem;
     color: #2F3148;
     font-weight: 300;
-}
-
-.card:hover img {
-    opacity: .4;
-    transition: .5s;
-}
-
-.card:hover li a {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-.card:hover li:nth-child(1) a {
-    transition-delay: .1s;
-}
-.card:hover li:nth-child(2) a {
-    transition-delay: .2s;
-}
-.card:hover li:nth-child(3) a {
-    transition-delay: .3s;
-}
-.card:hover li:nth-child(4) a {
-    transition-delay: .4s;
 }
