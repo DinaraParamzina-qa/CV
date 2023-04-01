@@ -26,12 +26,11 @@ body {
 
 .card-image {
     position: absolute;
-    top: 13px;
+    top: 23px;
     left: 22%;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    outline: 4px solid #dfe7f2;
+    outline: 2px solid #dfe7f2;
 }
 .card-image img {
     display: block;
